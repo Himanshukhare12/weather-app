@@ -33,7 +33,7 @@
       }
      async function fetchweather(location)
      {
-        const response =await fetch(`http://api.weatherapi.com/v1/current.json?key=ce17721251a24251aed140149241907&q=${location}&aqi=no`)
+        const response =await fetch(`https://api.weatherapi.com/v1/current.json?key=ce17721251a24251aed140149241907&q=${location}&aqi=no`)
         if(response.status==400)
         {alert("location is invalid");
         return null;}
